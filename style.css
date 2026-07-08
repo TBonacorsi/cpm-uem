@@ -12,6 +12,45 @@ body {
     line-height: 1.6;
 }
 
+
+/* 1. CONFIGURAÇÃO DO HEADER COM ANIMAÇÃO DE CORES */
+.banner {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff; 
+    
+    /* Cores iniciais do gradiente de fundo */
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #122240);
+    background-size: 400% 400%; /* Aumenta o tamanho do fundo para o efeito funcionar */
+    
+    /* Ativa a animação: nome, duração (20s), suavidade (ease) e infinito */
+    animation: mudancaDeCor 20s ease infinite; 
+}
+
+/* 2. CONFIGURAÇÃO DA FAIXA DE LOGOS */
+.banner-logos-strip {
+    display: block;
+    width: 50%;            
+    max-width: 1200px;      
+    height: auto;           
+    margin: 0 auto 30px auto; 
+    object-fit: contain;
+}
+
+/* 3. A ANIMAÇÃO QUE FAZ A COR MUDAR LEVEMENTE COM O TEMPO */
+@keyframes mudancaDeCor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Cores Principal: #004aad (Azul UEM) */
 
 .container {
@@ -80,6 +119,25 @@ body {
 
 .navbar a:hover {
     background-color: #545557;
+}
+
+.btn-forms {
+    display: inline-block;
+    background-color: #2a5298; 
+    color: white !important;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.2s;
+    margin: 15px 0;
+}
+
+.btn-forms:hover {
+    background-color: #1e3c72;
+    transform: translateY(-2px); 
 }
 
 /* ===== SEÇÕES GERAIS ===== */
