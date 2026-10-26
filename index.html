@@ -208,8 +208,7 @@ CEP 87020-900 - Maringá - PR - BR</p>
                         <li><span class="time">13:00</span> - Abertura Oficial</li>
                         <li><span class="time">14:00 - 16:00</span> - Mesa Temática 1: Sociedade, Performance e novas tecnologias*</li>
                         <li><span class="time">16:00 </span> - Coffee break</li>
-                        <li><span class="time">17:00 - 18h45</span> - Recitais dos Participantes aprovados via submissão</li>
-                        <li><span class="time">19:00</span> - Performance de abertura do Congresso</li>
+                        <li><span class="time">17:00 - 18h45</span> - Abertura: Recitais dos Participantes aprovados via submissão</li>
                     </ul>
                 </div>
 
@@ -232,15 +231,20 @@ CEP 87020-900 - Maringá - PR - BR</p>
             </div>
 
              <h3>Programação detalhada</h3>
-                <p>Acesse a programação detalhada das comunicações e das apresentações artísticas</p>
-        
-        <!-- BOTÃO PARA O FORMS -->
-                <a href="https://drive.google.com/file/d/14l7jm5eE2_NGwmHNHOQX9r9FKaXEf7Ov/view?usp=share_link" target="_blank" class="btn-forms">
-                        Comunicações
-                        </a> 
-                <a href="https://drive.google.com/file/d/1qMfjEdnZXZL-AJujepvrT_3Xse7hcqpW/view?usp=share_link" target="_blank" class="btn-forms">
-                        Apresentações artísticas
-                        </a>
+                <p>Clique nas imagens para ampliar:</p>
+
+        <div class="image-gallery">
+    <img src="https://drive.google.com/uc?export=view&id=14l7jm5eE2_NGwmHNHOQX9r9FKaXEf7Ov"
+         alt="Comunicações" onclick="openLightbox(this)">
+    <img src="https://drive.google.com/uc?export=view&id=1qMfjEdnZXZL-AJujepvrT_3Xse7hcqpW"
+         alt="Apresentações artísticas" onclick="openLightbox(this)">
+</div>
+
+<!-- Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
         </section>
 
         <!-- SEÇÃO: ANAIS / ARQUIVOS -->
