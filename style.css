@@ -157,6 +157,65 @@ body {
     font-size: 1.8rem;
 }
 
+/* Galeria de imagens */
+.image-gallery {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    border-color: #888;
+}
+
+/* Lightbox (popup) */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    line-height: 1;
+    user-select: none;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
 /* ===== EQUIPE / EXPEDIENTE ===== */
 .team-grid {
     display: grid;
