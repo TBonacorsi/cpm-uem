@@ -329,5 +329,24 @@ CEP 87020-900 - Maringá - PR - BR</p>
         </div>
     </footer>
 
+    <script>
+function openLightbox(img) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('active');
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+}
+
+// Fecha com a tecla ESC (opcional, mas recomendado)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+});
+</script>
+    
 </body>
 </html>
